@@ -4,7 +4,7 @@ import css from "./Header.module.css";
 export default function Header() {
   return (
       <header className={css.header}>
-          <div className={css.logo}>Food Delivery</div>
+          <div className={css.logo}>FoodDelivery</div>
       <nav className={css.nav}>
         <NavLink
           to="/shops"

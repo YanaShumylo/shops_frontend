@@ -6,21 +6,26 @@
   width: 100%;
   max-width: 375px;
   min-width: 320px;
-  padding: 60px 20px 20px;
+  padding: 20px;
   background-color: var(--color-fon-pages);
   color: var(--color-text);
+}
+
+.title{
+color: var(--color-header);
+margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
   .shopsPage {
     max-width: 768px;  
-    padding: 80px 32px 32px;
+    padding: 32px;
   }
 }
 
 @media (min-width: 1280px) {
   .shopsPage {
     max-width: 1280px;  
-    padding: 100px 32px 32px;
+    padding: 34px;
   }
 }

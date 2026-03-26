@@ -4,7 +4,18 @@
   --color-fon-pages: #f8dcdc;     
   --color-text: #000;         
   --color-header: #ff6b6b;
-  --color-link: white;               
+  --color-link: white; 
+  --color-card-shop: #eca0a0; 
+  --color-border: #ff6b6b; 
+  --color-shadow: #e6e5e559; 
+  --color-filters: #b07fe7; 
+  --color-label: white;
+  --color-shadow: #e6e5e559; 
+  --color-btn: #ff6b6b; 
+  --color-btn-border: white;
+  --color-btn-focus: #eca0a0;
+  --color-input: #fff; 
+  --color-text-muted: #999;
 }
 
 [data-theme="dark"] {
@@ -12,7 +23,17 @@
   --color-fon-pages: #f8dcdc;          
   --color-text: #000;       
   --color-header: #ff6b6b;
-  --color-link: white;                
+  --color-link: white;
+  --color-card-shop: #eca0a0; 
+  --color-border: #ff6b6b; 
+  --color-shadow: #e6e5e559; 
+  --color-filters: #b07fe7;
+  --color-label: white; 
+  --color-btn: #ff6b6b; 
+  --color-btn-border: white;
+  --color-btn-focus: #eca0a0;
+  --color-input: #fff; 
+  --color-text-muted: #999;                  
 }
 
 *,
@@ -60,6 +81,7 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: center;
 
 }
 

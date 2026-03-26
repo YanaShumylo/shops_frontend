@@ -1,0 +1,26 @@
+.listShops{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 335px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+.listShops {
+  max-width: 704px;  
+  padding: 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+.listShops {
+  max-width: 1216px;  
+  padding: 34px;
+  }
+}

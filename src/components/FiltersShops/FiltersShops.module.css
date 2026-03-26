@@ -1,0 +1,138 @@
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 335px;
+  min-width: 320px;
+  background: var(--color-filters);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+  .wrapperLabel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  }
+
+.label{
+align-items: center;
+justify-items: center;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.25;
+background: var(--color-label);
+border: 2px solid var(--color-btn-border);
+padding: 6px;
+border-radius: 16px;
+margin-left: 6px;
+transition: all 0.3s ease;
+}
+
+.label:active,
+.label:focus{
+  border-color: var(--color-btn-focus);
+  box-shadow: 0 0 6px var(--color-btn-focus);
+}
+
+.input {
+  align-items: center;
+  justify-items: center;
+  width: 60px;
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  border: 2px solid var(--color-btn-border);
+  border-radius: 16px;
+  outline: none;
+  background: var(--color-input);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--color-btn-focus);
+  box-shadow: 0 0 6px var(--color-btn-focus);
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.btn{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+
+.btnRating{
+border-radius: 30px;
+padding: 12px;
+background: var(--color-btn);
+border: 1px solid  var(--color-btn-border);
+font-weight: 500;
+color:  var(--color-text);
+transition: all 0.3s ease;
+}
+
+.btnReset{
+border-radius: 30px;
+padding: 12px;
+background: var(--color-btn);
+border: 1px solid  var(--color-btn-border);
+font-weight: 500;
+color:  var(--color-text);
+transition: all 0.3s ease;
+}
+
+.btnRating:hover,
+.btnRating:focus,
+.btnReset:hover,
+.btnReset:focus {
+  background: var(--color-btn-focus);
+}
+
+@media (min-width: 768px) {
+  .filter {
+    max-width: 704px;
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+
+  .wrapperLabel{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px; 
+  }
+
+  .label{
+font-size: 16px;
+line-height: 1.33;
+margin-left: 8px;
+}
+
+.input {
+  width: 80px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+}
+
+@media (min-width: 1280px) {
+  .filter {
+    max-width: 1216px;
+    padding: 34px;
+    margin-bottom: 26px;
+  }
+}
