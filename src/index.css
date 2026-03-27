@@ -17,6 +17,8 @@
   --color-input: #fff; 
   --color-text-muted: #999;
   --color-card-product: #c7ace6; 
+  --color-logo: yellow;
+  --color-text-logo: white;
 }
 
 [data-theme="dark"] {
@@ -35,7 +37,9 @@
   --color-btn-focus: #eca0a0;
   --color-input: #fff; 
   --color-text-muted: #999; 
-  --color-card-product: #c7ace6;                  
+  --color-card-product: #c7ace6;
+  --color-logo: yellow;
+  --color-text-logo: white;                  
 }
 
 *,
@@ -58,6 +62,10 @@ body {
   justify-content: center;  
   min-width: 320px;
   min-height: 100vh;
+}
+
+#root {
+  width: 100%;
 }
 
 p,

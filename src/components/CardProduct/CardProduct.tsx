@@ -1,3 +1,4 @@
+import { useCart } from "../../hooks/useCart";
 import type { Product } from "../../types/product";
 import css from "./CardProduct.module.css";
 
@@ -6,6 +7,8 @@ interface Props {
 }
 
 export default function CardProduct({ item }: Props) {
+  const { addToCart } = useCart();
+
   return (
     <li className={css.card}>
       <img src={item.image} alt={item.name} className={css.image} />
@@ -14,7 +17,7 @@ export default function CardProduct({ item }: Props) {
         <h2 className={css.name}>{item.name}</h2>
         <p className={css.price}>${item.price}</p>
         <p className={css.category}>{item.category}</p>
-        <button className={css.btnCart}>add to Cart</button>
+        <button className={css.btnCart} onClick={() => addToCart(item)}>add to Cart</button>
       </div>
       
     </li>

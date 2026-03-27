@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import css from "./Header.module.css";
+import Logo from "../Logo/Logo";
 
 export default function Header() {
   return (
       <header className={css.header}>
-          <div className={css.logo}>FoodDelivery</div>
+          <Logo />
       <nav className={css.nav}>
         <NavLink
           to="/shops"

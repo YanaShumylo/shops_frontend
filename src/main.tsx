@@ -7,17 +7,20 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import './index.css'
 import App from './App.tsx'
+import { CartProvider } from './context/CartProvider.tsx';
 
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
+      <CartProvider>
       <BrowserRouter>
         <App />
         <Toaster position="top-right" />
       <ReactQueryDevtools initialIsOpen={false} />
       </BrowserRouter>
+      </CartProvider>
     </QueryClientProvider>
   </StrictMode>,
 )

@@ -1,8 +1,10 @@
 .header {
 display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1280px; 
 width: 100%;
-max-width: 335px;
-min-width: 320px;
+margin: 0 auto;
 background-color: var(--color-header);
 padding: 20px;
 }
@@ -30,7 +32,6 @@ padding: 20px;
 
 @media (min-width: 768px) {
 .header{
-max-width: 704px;  
 padding: 32px;
 }
 
@@ -47,7 +48,6 @@ margin-right: 10px;
 
 @media (min-width: 1216px) {
 .header {
-max-width: 1280px;  
 padding: 34px;
 }
 }
