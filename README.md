@@ -1,7 +1,7 @@
 🍔 Food Delivery App
 🚀 Live Demo
 
-Frontend: 
+Frontend: https://shops-frontend-ten.vercel.app/
 Backend: https://your-api.onrender.com
 
 🧩 Features
