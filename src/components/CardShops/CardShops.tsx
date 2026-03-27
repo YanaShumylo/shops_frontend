@@ -3,12 +3,13 @@ import css from "./CardShops.module.css";
 
 interface CardShopsProps {
   item: Shop;
+  onClick?: () => void;
 }
 
-export default function CardShops({ item }: CardShopsProps) {
+export default function CardShops({ item, onClick }: CardShopsProps) {
 
   return (
-    <li className={css.card}>
+    <li className={css.card} onClick={onClick}>
       {item.image && <img src={item .image} alt={item.name} className={css.image} />}
       <div className={css.content}>
         <h2 className={css.name}>{item .name}</h2>

@@ -37,7 +37,7 @@ export default function FilterShops({ onChange }: FilterShopsProps) {
 
       <label className={css.label}>
         Max Rating:
-        <input
+        <input 
           type="number"
           min={1}
           max={5}
@@ -51,7 +51,7 @@ export default function FilterShops({ onChange }: FilterShopsProps) {
 
       <div className={css.btn}>
       <button className={css.btnRating} onClick={handleFilter}>Rating</button>
-      <button className={css.btnRating} onClick={handleReset}>Reset</button>
+      <button className={css.btnReset} onClick={handleReset}>Reset</button>
       </div>
     </div>
   );

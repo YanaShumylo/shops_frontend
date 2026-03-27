@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
   border-radius: 30px;
   width: 100%;
   max-width: 335px;
@@ -12,14 +12,28 @@
   margin-bottom: 20px;
 }
 
-  .wrapperLabel{
+.chips {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; 
-  }
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 4px;
+}
 
-.label{
+.chip {
+padding: 6px 12px;
+border-radius: 20px;
+border: 1px solid var(--color-border);
+background: var(--color-input);
+cursor: pointer;
+}
+
+.active {
+background: var(--color-btn-focus);
+color: white;
+}
+
+.sortBy{
 align-items: center;
 justify-items: center;
 font-weight: 700;
@@ -33,13 +47,13 @@ margin-left: 6px;
 transition: all 0.3s ease;
 }
 
-.label:active,
-.label:focus{
+.sortBy:active,
+.sortBy:focus{
   border-color: var(--color-btn-focus);
   box-shadow: 0 0 6px var(--color-btn-focus);
 }
 
-.input {
+.value {
   align-items: center;
   justify-items: center;
   width: 60px;
@@ -56,14 +70,9 @@ transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.input:focus {
+.value:focus {
   border-color: var(--color-btn-focus);
   box-shadow: 0 0 6px var(--color-btn-focus);
-}
-
-.input::placeholder {
-  color: var(--color-text-muted);
-  font-weight: 400;
 }
 
 .btn{
@@ -73,15 +82,18 @@ justify-content: space-between;
 width: 100%;
 }
 
-.btnRating{
-border-radius: 30px;
-padding: 12px;
-background: var(--color-btn);
-border: 1px solid  var(--color-btn-border);
-font-weight: 500;
-color:  var(--color-text);
-transition: all 0.3s ease;
+.text{
+font-size: 12px;
+font-weight: 400;
+line-height: 1;
 }
+
+.textNo{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.33;
+}
+
 
 .btnReset{
 border-radius: 30px;
@@ -93,44 +105,56 @@ color:  var(--color-text);
 transition: all 0.3s ease;
 }
 
-.btnRating:hover,
-.btnRating:focus,
 .btnReset:hover,
 .btnReset:focus {
-  background: var(--color-btn-focus);
+background: var(--color-btn-focus);
 }
 
 @media (min-width: 768px) {
-  .filter {
-    max-width: 704px;
-    margin-bottom: 24px;
-  }
+.filter {
+max-width: 704px;
+padding: 32px;
+margin-bottom: 24px;
+}
 
-  .wrapperLabel{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px; 
-  }
+.chips {
+  gap: 6px;
+}
 
-  .label{
+.text{
+font-size: 14px;
+font-weight: 600;
+}
+
+.sortBy{
 font-size: 16px;
 line-height: 1.33;
 margin-left: 8px;
 }
 
-.input {
+.value {
   width: 80px;
   margin-top: 10px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
 }
+
+.textNo{
+font-size: 20px;
+}
 }
 
 @media (min-width: 1280px) {
   .filter {
     max-width: 1216px;
+    padding: 34px;
     margin-bottom: 26px;
   }
+
+  .chips {
+  align-content: start;
+  justify-content: start;
+  gap: 8px;
+}
 }

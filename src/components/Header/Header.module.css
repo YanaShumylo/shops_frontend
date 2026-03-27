@@ -30,7 +30,7 @@ padding: 20px;
 
 @media (min-width: 768px) {
 .header{
-max-width: 768px;  
+max-width: 704px;  
 padding: 32px;
 }
 
@@ -45,7 +45,7 @@ margin-right: 10px;
 }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1216px) {
 .header {
 max-width: 1280px;  
 padding: 34px;

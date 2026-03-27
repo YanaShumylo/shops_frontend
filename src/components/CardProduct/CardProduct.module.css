@@ -7,7 +7,7 @@ max-width: 335px;
 height: 100%; 
 padding: 8px; 
 border-radius: 16px;
-background: var(--color-card-shop);
+background: var(--color-card-product);
 border: 1px solid var(--color-border);
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -31,6 +31,7 @@ height: 100px;
 display: flex;
 flex-direction: column;
 gap: 6px;
+ height: 100%; 
 }
 
 .name{
@@ -45,10 +46,35 @@ font-size: 12px;
 line-height: 1;
 }
 
-.rating{
+.price{
 font-weight: 600;
 font-size: 16px;
 line-height: 1.25;
+}
+
+.category{
+font-weight: 400;
+font-size: 12px;
+line-height: 1;
+}
+
+.btnCart{
+ align-self: flex-end;  
+  margin-top: auto; 
+height: 42px;
+width: 180px;
+border-radius: 30px;
+padding: 4px;
+background: var(--color-btn);
+border: 1px solid  var(--color-btn-border);
+font-weight: 500;
+color:  var(--color-text);
+transition: all 0.3s ease;
+}
+
+.btnReset:hover,
+.btnReset:focus {
+background: var(--color-btn-focus);
 }
 
 @media (min-width: 768px) {

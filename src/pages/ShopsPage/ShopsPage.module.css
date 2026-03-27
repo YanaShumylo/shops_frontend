@@ -12,6 +12,10 @@
 }
 
 .title{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.33;
+letter-spacing: -0.02em;
 color: var(--color-header);
 margin-bottom: 8px;
 }
@@ -21,6 +25,13 @@ margin-bottom: 8px;
     max-width: 768px;  
     padding: 32px;
   }
+
+  .title{
+font-weight: 700;
+font-size: 32px;
+margin-bottom: 16px;
+}
+
 }
 
 @media (min-width: 1280px) {

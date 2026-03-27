@@ -16,6 +16,7 @@
   --color-btn-focus: #eca0a0;
   --color-input: #fff; 
   --color-text-muted: #999;
+  --color-card-product: #c7ace6; 
 }
 
 [data-theme="dark"] {
@@ -33,7 +34,8 @@
   --color-btn-border: white;
   --color-btn-focus: #eca0a0;
   --color-input: #fff; 
-  --color-text-muted: #999;                  
+  --color-text-muted: #999; 
+  --color-card-product: #c7ace6;                  
 }
 
 *,
